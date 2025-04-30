@@ -10,7 +10,7 @@ import base64
 import numpy as np
 import pickle
 from scripts.feature_extraction import extract_hog_features
-base_dir=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+base_dir=os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(base_dir,'models','hist_gradient_boosting_model.pkl')
 print("Model path:", model_path)
 print("Files in models/:", os.listdir(os.path.join(base_dir, 'models')))
