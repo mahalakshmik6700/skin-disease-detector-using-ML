@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: skin-disease-detector
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    runtime: python
+    plan: free
+    branch: main
+    autoDeploy: true

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skin Disease Detection</title>
+</head>
+<body>
+    <h1>Welcome to the AI-Based Skin Disease Detector</h1>
+    <p>Upload an image to detect the skin disease.</p>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
