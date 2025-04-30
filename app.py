@@ -3,7 +3,7 @@ import joblib
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from flask import Flask, render_template, request
-app = Flask(__name__,template_folder='../templates',static_folder='../static')
+app = Flask(__name__,template_folder='templates',static_folder='static')
 from werkzeug.utils import secure_filename
 from PIL import Image
 import base64
